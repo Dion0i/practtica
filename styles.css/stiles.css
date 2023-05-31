@@ -1,0 +1,7 @@
+.color-change {
+    color: blue;
+    transition: color 0.5s;
+}
+
+.color-change:hover {
+    color: red;
