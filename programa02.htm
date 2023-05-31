@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text">
+    <button>verificar seceret.</button>
+
+    <script>
+        var secret = Math.round(Math.random()*10);
+        var input = document.querySelector("input");
+        input.focus();
+
+        function verificar()
+        {
+           if (parseInt(input.value) == secret) 
+           {
+             alert("Acerto");
+           }
+           else
+           {
+             alert("Usted erro");
+           }
+           input.value = "";
+           input.focus();
+        }
+        // end function
+        
+        var btn = document.querySelector("button");
+        btn.onclick = verificar;
+
+    </script>
+
+</body>
+</html>
